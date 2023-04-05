@@ -1,0 +1,108 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Content/Css/Site.css">
+    <title>Carnet d'adresse</title>
+</head>
+
+
+<body>
+    <div class="container">
+        <header>
+            <hr>
+            <h4>TP Dotnet MVC Without Razor Page </h4>
+        </header>
+
+        <div id="alert" class="alert">
+            <div class="pop succes" id="error">
+                <h4 id="errormsg">
+                    Enregistrer avec succes
+                </h4>
+            </div>
+        </div>
+
+
+        <div class="modal">
+            <div class="pop">
+                <form method="post">
+                    <div>
+                        <span id="closebtn">&times;</span>
+                    </div>
+
+                    <div class="input">
+                        <input type="text" name="nom" id="nom" required autocomplete="off">
+                        <label for="nom">Nom</label>
+                    </div>
+                    
+                    <ul  id="suggestedList"></ul>
+                    
+                    <div class="input">
+                        <input type="text" name="pseudo" id="pseudo" required autocomplete="off">
+                        <label for="pseudo">Pseudo</label>
+                    </div>
+                    <div class="input">
+                        <input type="email" name="email" id="email" required autocomplete="off">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="submitbtn">
+                        <button id="cancel" type="reset">Anuller</button>
+                        <button type="submit" id="create-user" name="btnsumbit">Enregsitre</button>
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+
+        <nav>
+            <button id="addbtn">+ Ajouter</button>
+            <div class="search">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Rechercher" id="search" >
+            </div>
+        </nav>
+
+
+        <div class="content">
+
+
+            <article>
+                <table>
+                    <tr>
+                        <th>Nom</th>
+                        <th class="pseudo">Pseudo</th>
+                        <th class="email">email</th>
+                        <th colspan="2">
+                            action
+                        </th>
+                    </tr>
+                    <tbody id="tableBody">
+                    </tbody>
+                </table>
+
+            </article>
+        </div>
+        <footer>
+
+            <h4> Rivaldes Copyrth 2023</h4>
+
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="/Scripts/Jquery/jquery-3.4.1.min.js">
+    </script>
+    <script type="text/javascript" src="/Scripts/script.js">
+    </script>
+
+
+
+
+</body>
+
+</html>
